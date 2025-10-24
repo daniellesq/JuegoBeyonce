@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escapa de Beyoncé</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>¡Escapa de Beyoncé!</h1>
+
+  <div id="config-panel">
+    <h2>⚙️ Configuración</h2>
+
+    <label>
+      Velocidad del jugador:
+      <input type="range" id="playerSpeedInput" min="10" max="100" value="40">
+      <span id="playerSpeedValue">40</span>
+    </label>
+
+    <label>
+      Velocidad de Beyoncé:
+      <input type="range" id="enemySpeedInput" min="1" max="10" value="2">
+      <span id="enemySpeedValue">2</span>
+    </label>
+
+    <label>
+      Fondo:
+      <select id="backgroundSelect">
+        <option value="#fefefe">Claro</option>
+        <option value="#111">Oscuro</option>
+        <option value="linear-gradient(135deg, pink, purple)">Rosado</option>
+      </select>
+    </label>
+
+    <button id="pauseBtn">⏸️ Pausar</button>
+  </div>
+
+  <div id="Game-Area">
+    <div id="player" class="character"></div>
+    <div id="Beyonce" class="character"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
